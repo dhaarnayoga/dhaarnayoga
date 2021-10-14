@@ -199,7 +199,7 @@ header .ham-burger.active span:nth-child(2){
 {
 	margin-top: 20px;
 	padding:8px 30px;
-	background-image:linear-gradient(to right, #e9e8e7, #fcb63c);
+	background-image:linear-gradient(to right, #fcb63c, #fcb63c);
 	color:#294d6c;
 	width: 220px;
 	text-decoration: none;
