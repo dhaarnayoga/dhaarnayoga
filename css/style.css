@@ -199,7 +199,7 @@ header .ham-burger.active span:nth-child(2){
 {
 	margin-top: 20px;
 	padding:8px 30px;
-	background-image:linear-gradient(to right, #fcb63c, #fcb63c);
+	background-image:linear-gradient(to right, #e9e8e7, #fcb63c);
 	color:#294d6c;
 	width: 220px;
 	text-decoration: none;
@@ -266,7 +266,7 @@ header .ham-burger.active span:nth-child(2){
 /* //////////////////////////About section//////////////////////////// */
 
 .about{
-	padding:120px 0px;
+	padding:50px 0px;
 	background-color:#ffffff;
 }
 h2{
@@ -351,6 +351,7 @@ h2{
 .service .content .text p{
     font-size: 15px;
 	line-height:20px;
+	text-align: justify;
 	color:#ffffff;
 	margin:0;
 	padding:0px 0px 20px;
@@ -421,6 +422,7 @@ h2{
 .service .content .accordian-container .body p{
     font-size: 15px;
 	line-height:20px;
+	text-align: justify;
 	color:#ffffff;
 	margin:0;
 	padding:0;
@@ -461,7 +463,8 @@ h2{
 
 .classes .content .text p{
 	font-size: 15px;
-    line-height: 20px;
+    line-height: 22px;
+	text-align: justify;
     color: #000000;
     margin: 0;
     padding: 0px 0px 30px;
@@ -536,7 +539,8 @@ h2{
 
 .classes .content .class-items .item .item-text p{
 	font-size: 15px;
-    line-height: 20px;
+    line-height: 22px;
+	text-align: justify;
     color: #ffffff;
     text-align:left;
     margin: 0;
@@ -604,6 +608,7 @@ h2{
 .start-today .content .text p{
 	font-size: 15px;
     line-height: 20px;
+	text-align: justify;
     color: #ffffff;
     margin: 0;
     padding: 0px 0px 20px;
@@ -657,6 +662,7 @@ h2{
 .schedule .container p{
 	font-size: 18px;
     line-height: 30px;
+	text-align: justify;
     color: #222222;
     margin-bottom: 20px;
     padding: 0px 0px 40px;
@@ -971,6 +977,10 @@ h2{
 .classes .content .img{
 	display: none;
 }
+/* .about1 .content{
+    flex-direction: column;
+} */
+
 .start-today .content .box{
 	padding:15px;
 }
@@ -978,8 +988,17 @@ h2{
 
 /*if screen width is less than or equal to 767px then*/
 @media(max-width: 767px){
+	.home{
+		height: 100vh;
+		width: 100%;	
+		
+	}
   .home h1{
       font-size: 40px;
+  }
+  .about{
+	padding:10px 0px;
+	background-color:#ffffff;
   }
   .about .content{
   	 flex-wrap: wrap;
@@ -1003,12 +1022,43 @@ h2{
     flex: 0 0 100%;
     max-width: 100%;
 }
+.about1 .content{
+
+	flex-direction: column; 
+}
+.about1 .content .box{
+	padding:20px;
+	flex:0 0 100%;
+	max-width: 100%;
+}
+.about1 .content .img img{
+	width: 80%;
+	margin-left: 27px;
+	align-content: center;
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+.about1 .content .text p{
+	font-size: 15px;
+	text-align: justify;
+    line-height: 30px;
+    color: #000000;
+    margin: 0;
+    padding: 0px 0px 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .schedule .content{
 	flex-wrap: wrap;
 }
 .schedule .content .box{
 flex: 0 0 100%;
     max-width: 100%;	
+}
+.schedule .container p{
+	
+    padding: 0px 20px 30px;
+    
 }
 .start-today .content{
 	flex-wrap: wrap;
